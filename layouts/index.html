@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="lh-copy">
+    {{ .Content }}
+    <div class="mv5">
+        <h2 class="f4">Recent Posts</h2>
+        <ul class="list pa0">
+            {{ range first 5 .Data.Pages.ByPublishDate.Reverse }}
+                <li class="f5 mb1">
+                    <span class="mt1 mr2 silver code"><time>{{ .Date.Format "2006-01-02" }}</time></span>
+                    <a href="{{ .URL }}" class="link dim dark-blue fw6 w1">{{ .Title }}</a>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+    <div class="tc">
+        {{ range .Site.Menus.social }}
+        <a class="link dim dark-blue f5 dib ph2" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+</main>
+{{ end }}

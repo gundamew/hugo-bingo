@@ -1,0 +1,45 @@
+blockquote {
+    background: #f0f0f0;
+    border-left: .5rem solid #c7c7c7;
+    padding: .5rem 1rem;
+}
+
+/* Override highlighter styles */
+
+.chroma {
+    border-radius: 4px;
+}
+
+.chroma .lntd:first-child {
+    padding-left: .4rem;
+    padding-right: .8rem;
+}
+
+.chroma .ln,
+.chroma .lnt {
+    opacity: .5;
+}
+
+/* Copied from TACHYONS */
+
+a {
+    color: #00449e;
+    text-decoration: none;
+    opacity: 1;
+}
+
+a,
+a:focus,
+a:hover {
+    transition: opacity .15s ease-in;
+}
+
+a:focus,
+a:hover {
+    opacity: .5;
+}
+
+a:active {
+    opacity: .8;
+    transition:opacity .15s ease-out;
+}

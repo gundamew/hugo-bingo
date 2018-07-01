@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main>
+    <h1 class="lh-title tc pa1 mb0">{{ .Title }}</h1>
+    <h2 class="f4 tc mb4"><time>{{ .Date.Format "2006-01-02" }}</time></h2>
+    <section class="lh-copy">
+        {{ .Content }}
+    </section>
+</main>
+{{ end }}

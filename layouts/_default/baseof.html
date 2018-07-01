@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div class="mw8 mw8-ns ph4 ph4-ns center mv4">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
