@@ -1,21 +1,17 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Bingo"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
-min_version = "0.41"
+licenselink = "https://github.com/gundamew/hugo-bingo/blob/master/LICENSE"
+description = "Nothing but texts."
+homepage = "https://github.com/gundamew/hugo-bingo"
+tags = ["minimalist", "simple", "clean", "blog", "starter", "responsive"]
+features = ["blog"]
+min_version = "0.10"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Bing-Sheng Chen"
+  homepage = "https://bschen.tw/"
 
-# If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Kellen Evan Person"
+  homepage = "https://goodroot.ca/"
+  repo = "https://github.com/goodroot/hugo-classic"
