@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="lh-copy">
     {{ .Content }}
-    <div class="mv5">
+    <div class="mv4">
         <h2 class="f4">Recent Posts</h2>
         <ul class="list pa0">
             {{ range first 5 .Data.Pages.ByPublishDate.Reverse }}
