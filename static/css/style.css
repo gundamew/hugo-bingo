@@ -6,18 +6,9 @@ blockquote {
 
 /* Override highlighting styles */
 
-.chroma {
+.hljs {
     border-radius: .25rem;
-}
-
-.chroma .lntd:first-child {
-    padding-left: .5rem;
-    padding-right: 1rem;
-}
-
-.chroma .ln,
-.chroma .lnt {
-    opacity: .5;
+    padding: 1rem;
 }
 
 /* Copied from TACHYONS styles */
