@@ -1,6 +1,15 @@
 {{ define "main" }}
 <main class="lh-copy">
-    {{ .Content }}
+    <div class="dt">
+        <div class="dtc w4 pr4 v-mid">
+            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=240&d=mp" class="w-100 db br-100" alt="gravatar">
+        </div>
+        <div class="dtc v-top">
+            {{ .Content }}
+            {{ .Render "social-links" }}
+        </div>
+    </div>
+
     <div class="mv4">
         <h2 class="f4">Recent Posts</h2>
         <ul class="list pa0">
@@ -11,11 +20,6 @@
                 </li>
             {{ end }}
         </ul>
-    </div>
-    <div class="tc">
-        {{ range .Site.Menus.social }}
-        <a class="link dim dark-blue f5 dib ph2" href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{ end }}
     </div>
 </main>
 {{ end }}

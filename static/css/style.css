@@ -4,15 +4,15 @@ blockquote {
     padding: .5rem 1rem;
 }
 
-/* Override highlighter styles */
+/* Override highlighting styles */
 
 .chroma {
-    border-radius: 4px;
+    border-radius: .25rem;
 }
 
 .chroma .lntd:first-child {
-    padding-left: .4rem;
-    padding-right: .8rem;
+    padding-left: .5rem;
+    padding-right: 1rem;
 }
 
 .chroma .ln,
@@ -20,7 +20,7 @@ blockquote {
     opacity: .5;
 }
 
-/* Copied from TACHYONS */
+/* Copied from TACHYONS styles */
 
 a {
     color: #00449e;
