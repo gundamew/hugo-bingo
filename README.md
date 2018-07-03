@@ -17,6 +17,14 @@ For more information read the official guide: [Install and Use Themes](https://g
 
 ## Usage
 
+### Use Google Analytics
+
+This theme includes Hugo [internal template](https://gohugo.io/templates/internal/) for Google Analytics tracking. Provide your tracking ID in your configuration file to use it:
+
+```toml
+googleAnalytics = "UA-123-45"
+```
+
 ### Custom navbar
 
 ```toml
