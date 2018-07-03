@@ -27,7 +27,7 @@ googleAnalytics = "UA-123-45"
     weight = 20
 
 [params]
-  email = "email"
+  email = "username@domain"
   github = "github_username"
   linkedin = "linkedin_username"
   medium = "medium_username"
