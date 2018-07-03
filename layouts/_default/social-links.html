@@ -1,30 +1,32 @@
-{{ with .Site.Params.github }}
-    <a class="link dim gray dib h2 w2 br-100 mr3" href="https://github.com/{{ . }}">
-        <img src="{{ "/img/github.svg" | absURL }}" alt="github">
-    </a>
-{{ end }}
-{{ with .Site.Params.linkedin }}
-    <a class="link dim gray dib h2 w2 br-100 mr3" href="https://www.linkedin.com/in/{{ . }}">
-        <img src="{{ "/img/linkedin.svg" | absURL }}" alt="linkedin">
-    </a>
-{{ end }}
-{{ with .Site.Params.medium }}
-    <a class="link dim gray dib h2 w2 br-100 mr3" href="https://medium.com/{{ . }}">
-        <img src="{{ "/img/medium.svg" | absURL }}" alt="medium">
-    </a>
-{{ end }}
-{{ with .Site.Params.twitter }}
-    <a class="link dim gray dib h2 w2 br-100 mr3" href="https://twitter.com/{{ . }}">
-        <img src="{{ "/img/twitter.svg" | absURL }}" alt="twitter">
-    </a>
-{{ end }}
-{{ with .Site.Params.facebook }}
-    <a class="link dim gray dib h2 w2 br-100 mr3" href="https://facebook.com/{{ . }}">
-        <img src="{{ "/img/facebook.svg" | absURL }}" alt="facebook">
-    </a>
-{{ end }}
-{{ with .Site.Params.instagram }}
-    <a class="link dim gray dib h2 w2 br-100 mr3" href="https://instagram.com/{{ . }}">
-        <img src="{{ "/img/instagram.svg" | absURL }}" alt="instagram">
-    </a>
-{{ end }}
+<div class="mt4">
+    {{ with .Site.Params.github }}
+        <a class="link dim gray dib h2 w2 br-100 mr3" href="https://github.com/{{ . }}">
+            <img src="{{ "/img/github.svg" | absURL }}" alt="github">
+        </a>
+    {{ end }}
+    {{ with .Site.Params.linkedin }}
+        <a class="link dim gray dib h2 w2 br-100 mr3" href="https://www.linkedin.com/in/{{ . }}">
+            <img src="{{ "/img/linkedin.svg" | absURL }}" alt="linkedin">
+        </a>
+    {{ end }}
+    {{ with .Site.Params.medium }}
+        <a class="link dim gray dib h2 w2 br-100 mr3" href="https://medium.com/{{ . }}">
+            <img src="{{ "/img/medium.svg" | absURL }}" alt="medium">
+        </a>
+    {{ end }}
+    {{ with .Site.Params.twitter }}
+        <a class="link dim gray dib h2 w2 br-100 mr3" href="https://twitter.com/{{ . }}">
+            <img src="{{ "/img/twitter.svg" | absURL }}" alt="twitter">
+        </a>
+    {{ end }}
+    {{ with .Site.Params.facebook }}
+        <a class="link dim gray dib h2 w2 br-100 mr3" href="https://facebook.com/{{ . }}">
+            <img src="{{ "/img/facebook.svg" | absURL }}" alt="facebook">
+        </a>
+    {{ end }}
+    {{ with .Site.Params.instagram }}
+        <a class="link dim gray dib h2 w2 br-100 mr3" href="https://instagram.com/{{ . }}">
+            <img src="{{ "/img/instagram.svg" | absURL }}" alt="instagram">
+        </a>
+    {{ end }}
+</div>
