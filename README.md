@@ -17,6 +17,24 @@ For more information read the official guide: [Install and Use Themes](https://g
 
 ## Usage
 
+### Custom navbar
+
+```toml
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 20
+```
+
 ### Add social networks
 
 You can put social network links on home page:
