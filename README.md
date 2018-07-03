@@ -22,9 +22,8 @@ For more information read the official guide: [Install and Use Themes](https://g
 You can put social network links on home page:
 
 ```toml
-
 [params]
-  email = "username@domain"
+  email = "username@domain"  # for Gravatar
   github = "github_username"
   linkedin = "linkedin_username"
   medium = "medium_username"
