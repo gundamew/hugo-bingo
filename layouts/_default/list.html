@@ -1,7 +1,7 @@
 {{ define "main" }}
-    <main>
-        <h1 class="f2">{{ .Title }}</h1>
-        <ul class="list pa0">
+    <main class="mt2">
+        <h1 class="f2 mb4">{{ .Title }}</h1>
+        <ul class="list ph0">
             {{ range .Data.Pages }}
             <li class="mb4">
                 <a href="{{ .URL }}" class="link dim dark-blue f4 fw6">{{ .Title }}</a>
