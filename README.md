@@ -33,6 +33,12 @@ You can put social network links on home page:
   instagram = "instagram_username"
 ```
 
+## Built With
+
+* [TACHYONS](http://tachyons.io/)
+* [Highlight.js](https://highlightjs.org/)
+* [Simple Icons](https://simpleicons.org/)
+
 ## Contributing
 
 Feel free to submit issues or pull requests.
