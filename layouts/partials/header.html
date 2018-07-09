@@ -1,7 +1,7 @@
-<header class="mw8 mw8-ns ph4 ph4-ns center mt2 mb4">
-    <nav class="pv2 pv2-ns ph3 ph3-ns bg-dark-blue">
+<header>
+    <nav class="breadcrumb">
         {{ range .Site.Menus.main }}
-        <a class="link dim near-white f5 f5-ns dib mr3 code" href="{{ .URL | relURL }}">/{{ .Name }}</a>
+        <a href="{{ .URL | relURL }}">/{{ .Name }}</a>
         {{ end }}
     </nav>
 </header>

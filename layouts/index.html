@@ -1,22 +1,22 @@
 {{ define "main" }}
-<main class="lh-copy">
-    <div class="dt">
-        <div class="dtc w4 pr4 v-mid">
-            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=240&d=mp" class="w-100 db br-100" alt="gravatar">
+<main id="home">
+    <div>
+        <div class="avatar">
+            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=240&d=mp" class="avatar" alt="gravatar">
         </div>
-        <div class="dtc v-top">
+        <div id="content">
             {{ .Content }}
             {{ .Render "social-links" }}
         </div>
     </div>
 
-    <div class="mv4">
-        <h2 class="f4">Recent Posts</h2>
-        <ul class="list pa0">
+    <div id="recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
             {{ range first 5 .Data.Pages.ByPublishDate.Reverse }}
-                <li class="f5 mb1">
-                    <span class="mt1 mr2 silver code"><time>{{ .Date.Format "2006-01-02" }}</time></span>
-                    <a href="{{ .URL }}" class="link dim dark-blue fw6 w1">{{ .Title }}</a>
+                <li>
+                    <span>{{ .Render "time-element" }}</span>
+                    <a href="{{ .URL }}">{{ .Title }}</a>
                 </li>
             {{ end }}
         </ul>

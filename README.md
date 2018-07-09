@@ -60,7 +60,6 @@ You can put social network links on home page:
 
 ## Built With
 
-* [TACHYONS](http://tachyons.io/)
 * [Highlight.js](https://highlightjs.org/)
 * [Simple Icons](https://simpleicons.org/)
 
