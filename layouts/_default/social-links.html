@@ -19,6 +19,11 @@
             <img src="{{ "img/twitter.svg" | absURL }}" alt="twitter">
         </a>
     {{ end }}
+	{{ with .Site.Params.stackoverflow }}
+        <a class="social-media" href="https://stackexchange.com/users/{{ . }}/?tab=accounts">
+            <img src="{{ "img/stackoverflow.svg" | absURL }}" alt="stackoverflow">
+        </a>
+    {{ end }}
     {{ with .Site.Params.facebook }}
         <a class="social-media" href="https://facebook.com/{{ . }}">
             <img src="{{ "img/facebook.svg" | absURL }}" alt="facebook">
