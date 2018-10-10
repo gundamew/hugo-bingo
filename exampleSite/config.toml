@@ -34,4 +34,4 @@ googleAnalytics = "UA-123-45"
   twitter = "twitter_username"
   facebook = "facebook_username"
   instagram = "instagram_username"
-  stackoverflow = "1234567" #StackExchange user number
+  stackoverflow = "stackoverflow_user_number"
