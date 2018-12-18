@@ -2,7 +2,7 @@
 <main id="home">
     <div>
         <div class="avatar">
-            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=240&d=mp" alt="gravatar">
+            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar.email }}?s=240&d=mp" alt="gravatar">
         </div>
         <div id="content">
             {{ .Content }}

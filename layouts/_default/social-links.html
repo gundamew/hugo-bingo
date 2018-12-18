@@ -1,37 +1,7 @@
 <div class="social-media-links">
-    {{ with .Site.Params.github }}
-        <a class="social-media" href="https://github.com/{{ . }}">
-            <img src="{{ "img/github.svg" | absURL }}" alt="github">
-        </a>
-    {{ end }}
-    {{ with .Site.Params.linkedin }}
-        <a class="social-media" href="https://www.linkedin.com/in/{{ . }}">
-            <img src="{{ "img/linkedin.svg" | absURL }}" alt="linkedin">
-        </a>
-    {{ end }}
-    {{ with .Site.Params.medium }}
-        <a class="social-media" href="https://medium.com/{{ . }}">
-            <img src="{{ "img/medium.svg" | absURL }}" alt="medium">
-        </a>
-    {{ end }}
-    {{ with .Site.Params.twitter }}
-        <a class="social-media" href="https://twitter.com/{{ . }}">
-            <img src="{{ "img/twitter.svg" | absURL }}" alt="twitter">
-        </a>
-    {{ end }}
-    {{ with .Site.Params.stackoverflow }}
-        <a class="social-media" href="https://stackoverflow.com/users/{{ . }}">
-            <img src="{{ "img/stackoverflow.svg" | absURL }}" alt="stackoverflow">
-        </a>
-    {{ end }}
-    {{ with .Site.Params.facebook }}
-        <a class="social-media" href="https://facebook.com/{{ . }}">
-            <img src="{{ "img/facebook.svg" | absURL }}" alt="facebook">
-        </a>
-    {{ end }}
-    {{ with .Site.Params.instagram }}
-        <a class="social-media" href="https://instagram.com/{{ . }}">
-            <img src="{{ "img/instagram.svg" | absURL }}" alt="instagram">
+    {{ range sort .Site.Params.social "weight" }}
+        <a class="social-media" href="{{ .url }}">
+            <img src="{{ printf "img/%s.svg" .icon | absURL }}" alt="{{ .icon }}">
         </a>
     {{ end }}
 </div>

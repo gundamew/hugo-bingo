@@ -27,11 +27,26 @@ googleAnalytics = "UA-123-45"
     weight = 20
 
 [params]
-  email = "username@domain"
-  github = "github_username"
-  linkedin = "linkedin_username"
-  medium = "medium_username"
-  twitter = "twitter_username"
-  facebook = "facebook_username"
-  instagram = "instagram_username"
-  stackoverflow = "stackoverflow_user_number"
+
+  [params.gravatar]
+    email = "hugo@example.com"
+
+  [[params.social]]
+    icon = "github"
+    url = "https://github.com/example"
+    weight = 10
+
+  [[params.social]]
+    icon = "twitter"
+    url = "https://twitter.com/example"
+    weight = 30
+
+  [[params.social]]
+    icon = "stackoverflow"
+    url = "https://stackoverflow.com/story/example"
+    weight = 40
+
+  [[params.social]]
+    icon = "linkedin"
+    url = "https://www.linkedin.com/in/example"
+    weight = 20

@@ -25,6 +25,15 @@ This theme includes Hugo [internal template](https://gohugo.io/templates/interna
 googleAnalytics = "UA-123-45"
 ```
 
+### Use Gravatar
+
+```toml
+[params]
+
+  [params.gravatar]
+    email = "hugo@example.com"
+```
+
 ### Custom navbar
 
 ```toml
@@ -43,20 +52,43 @@ googleAnalytics = "UA-123-45"
     weight = 20
 ```
 
-### Add social networks
+### Display social networks
 
-You can put social network links on home page:
+You can put social network links on home page. It will sort by weight in ascending order, like navbar.
 
 ```toml
 [params]
-  email = "username@domain"  # for Gravatar
-  github = "github_username"
-  linkedin = "linkedin_username"
-  medium = "medium_username"
-  twitter = "twitter_username"
-  facebook = "facebook_username"
-  instagram = "instagram_username"
+
+  [[params.social]]
+    icon = "github"
+    url = "https://github.com/example"
+    weight = 10
+
+  [[params.social]]
+    icon = "twitter"
+    url = "https://twitter.com/example"
+    weight = 30
+
+  [[params.social]]
+    icon = "linkedin"
+    url = "https://www.linkedin.com/in/example"
+    weight = 20
 ```
+
+Available social icons:
+
+* Bitbucket
+* Facebook
+* GitHub
+* GitLab
+* Instagram
+* Keybase
+* LinkedIn
+* Medium
+* Plurk
+* Stack Exchange
+* Stack Overflow
+* Twitter
 
 ## Built With
 
