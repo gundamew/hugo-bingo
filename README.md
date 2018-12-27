@@ -77,18 +77,18 @@ You can put social network links on home page. It will sort by weight in ascendi
 
 Available social icons:
 
-* Bitbucket
-* Facebook
-* GitHub
-* GitLab
-* Instagram
-* Keybase
-* LinkedIn
-* Medium
-* Plurk
-* Stack Exchange
-* Stack Overflow
-* Twitter
+* `bitbucket`
+* `facebook`
+* `github`
+* `gitlab`
+* `instagram`
+* `keybase`
+* `linkedin`
+* `medium`
+* `plurk`
+* `stackexchange`
+* `stackoverflow`
+* `twitter`
 
 ## Built With
 
