@@ -3,7 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ with .Page.Title }}{{ . }} - {{ end }}{{ .Site.Title }}</title>
     <base href="{{ .Site.BaseURL }}">
-    <link rel="stylesheet" href="{{ "css/normalize.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/solarized-light.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+    {{ $normalize := resources.Get "css/normalize.css" }}
+    {{ $solarized := resources.Get "css/solarized-light.css" }}
+    {{ $style := resources.Get "css/style.css" }}
+    {{ $css := slice $normalize $solarized $style | resources.Concat "css/main.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
 </head>
