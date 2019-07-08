@@ -16,7 +16,7 @@
             {{ range first 5 .Data.Pages.ByPublishDate.Reverse }}
                 <li>
                     <span>{{ .Render "time-element" }}</span>
-                    <a href="{{ .URL }}">{{ .Title }}</a>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </li>
             {{ end }}
         </ul>
