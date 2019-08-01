@@ -15,7 +15,7 @@ $ git clone git@github.com:gundamew/hugo-bingo.git
 
 For more information read the official guide: [Install and Use Themes](https://gohugo.io/themes/installing-and-using-themes/).
 
-## Usage
+## Features
 
 ### Use Google Analytics
 
@@ -96,6 +96,91 @@ Available social icons:
 ```toml
 [params]
   dateFormat = "2006-01-02"
+```
+
+### Multiple languages
+
+Example config:
+
+```toml
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+  [languages.en]
+    weight = 10
+    languageCode = "en-us"
+    languageName = "English"
+    contentDir = "content/en"
+
+  [languages.fr]
+    weight = 20
+    languageCode = "fr-fr"
+    languageName = "Français"
+    contentDir = "content/fr"
+
+  [languages.zh]
+    weight = 30
+    languageCode = "zh-tw"
+    languageName = "中文（臺灣）"
+    contentDir = "content/zh"
+
+[menu]
+
+  [[languages.en.menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[languages.en.menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 20
+
+  [[languages.fr.menu.main]]
+    identifier = "home"
+    name = "Maison"
+    url = "/fr"
+    weight = 10
+
+  [[languages.fr.menu.main]]
+    identifier = "posts"
+    name = "Des postes"
+    url = "/fr/posts"
+    weight = 20
+
+  [[languages.zh.menu.main]]
+    identifier = "home"
+    name = "首頁"
+    url = "/zh"
+    weight = 10
+
+  [[languages.zh.menu.main]]
+    identifier = "posts"
+    name = "文章列表"
+    url = "/zh/posts"
+    weight = 20
+```
+
+And you have organize your posts like this:
+
+```shell
+.
+└── content
+    └── en
+    |   └── posts
+    |       └── post-1.md
+    ├── fr
+    |   └── posts
+    |       ├── post-1.md
+    |       └── post-2.md
+    └── zh
+        └── posts
+            ├── post-1.md
+            └── post-2.md
 ```
 
 ## Built With
