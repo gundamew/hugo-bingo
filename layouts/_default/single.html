@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="single">
     <h1>{{ .Title }}</h1>
-    <h2>{{ .Render "time-element" }}</h2>
+    <h2>{{- partial "date.html" . -}}</h2>
     <section class="post-content">
         {{ .Content }}
     </section>

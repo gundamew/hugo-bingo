@@ -90,6 +90,13 @@ Available social icons:
 * `stackoverflow`
 * `twitter`
 
+### Custom date format
+
+```toml
+[params]
+  dateFormat = "2006-01-02"
+```
+
 ## Built With
 
 * [Highlight.js](https://highlightjs.org/)
