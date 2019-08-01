@@ -1,7 +1,0 @@
-<div class="social-media-links">
-    {{ range sort .Site.Params.social "weight" }}
-        <a class="social-media" href="{{ .url }}">
-            <img src="{{ printf "img/%s.svg" .icon | absURL }}" alt="{{ .icon }}">
-        </a>
-    {{ end }}
-</div>
