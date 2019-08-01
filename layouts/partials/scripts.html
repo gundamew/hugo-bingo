@@ -1,0 +1,3 @@
+{{ $highlight := resources.Get "js/highlight.pack.js" | fingerprint }}
+<script src="{{ $highlight.Permalink }}" integrity="{{ $highlight.Data.Integrity }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>

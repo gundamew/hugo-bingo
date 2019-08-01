@@ -7,6 +7,7 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        {{- partialCached "scripts.html" . -}}
         {{- template "_internal/google_analytics.html" . -}}
     </body>
 </html>
