@@ -1,4 +1,5 @@
 <footer>
+    {{ partial "lang-selector.html" . }}
     <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
 </footer>
 {{ $highlight := resources.Get "js/highlight.pack.js" | fingerprint }}

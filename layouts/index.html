@@ -18,7 +18,7 @@
     </div>
 
     <div id="recent-posts">
-        <h2>Recent Posts</h2>
+        <h2>{{ i18n "recent_posts" }}</h2>
         <ul>
             {{ range first 5 .Data.Pages.ByPublishDate.Reverse }}
                 <li>

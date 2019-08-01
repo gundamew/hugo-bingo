@@ -163,6 +163,12 @@ ul {
     font-weight: normal;
 }
 
+.lang-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .footer-text {
     font-size: .8rem;
 }
