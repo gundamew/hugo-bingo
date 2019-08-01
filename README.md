@@ -78,6 +78,7 @@ You can put social network links on home page. It will sort by weight in ascendi
 Available social icons:
 
 * `bitbucket`
+* `dribbble`
 * `facebook`
 * `github`
 * `gitlab`
