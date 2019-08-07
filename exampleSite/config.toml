@@ -1,7 +1,8 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "zh-cmn-Hant"
 title = "Bingo"
 theme = "hugo-bingo"
+themesDir = "../.."
 
 disableHugoGeneratorInject = true
 enableEmoji = true
@@ -27,26 +28,27 @@ googleAnalytics = "UA-123-45"
     weight = 20
 
 [params]
+  dateFormat = "2006-01-02"
 
   [params.gravatar]
     email = "hugo@example.com"
 
   [[params.social]]
-    icon = "github"
+    name = "github"
     url = "https://github.com/example"
     weight = 10
 
   [[params.social]]
-    icon = "twitter"
+    name = "twitter"
     url = "https://twitter.com/example"
     weight = 30
 
   [[params.social]]
-    icon = "stackoverflow"
+    name = "stackoverflow"
     url = "https://stackoverflow.com/story/example"
     weight = 40
 
   [[params.social]]
-    icon = "linkedin"
+    name = "linkedin"
     url = "https://www.linkedin.com/in/example"
     weight = 20
