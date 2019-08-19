@@ -20,7 +20,7 @@
     <div id="recent-posts">
         <h2>{{ i18n "recent_posts" }}</h2>
         <ul>
-            {{ range first 5 .Pages.ByPublishDate.Reverse }}
+            {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections).ByPublishDate.Reverse }}
                 <li>
                     <span>{{- partial "date.html" . -}}</span>
                     <a href="{{ .Permalink }}">{{ .Title }}</a>

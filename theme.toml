@@ -5,7 +5,7 @@ description = "Nothing but texts."
 homepage = "https://github.com/gundamew/hugo-bingo"
 tags = ["minimalist", "simple", "clean", "blog", "starter", "responsive"]
 features = ["blog"]
-min_version = "0.42.2"
+min_version = "0.57.2"
 
 [author]
   name = "Bing-Sheng Chen"
