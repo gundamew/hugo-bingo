@@ -13,7 +13,9 @@ $ cd themes
 $ git clone git@github.com:gundamew/hugo-bingo.git
 ```
 
-For more information read the official guide: [Install and Use Themes](https://gohugo.io/themes/installing-and-using-themes/).
+~~For more information read the official guide: [Install and Use Themes](https://gohugo.io/themes/installing-and-using-themes/).~~
+
+Todo: [Use Hugo Modules](https://gohugo.io/hugo-modules/use-modules/)
 
 ## Features
 
