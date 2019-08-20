@@ -60,17 +60,17 @@ You can put social network links on home page. It will sort by weight in ascendi
 [params]
 
   [[params.social]]
-    icon = "github"
+    name = "github"
     url = "https://github.com/example"
     weight = 10
 
   [[params.social]]
-    icon = "twitter"
+    name = "twitter"
     url = "https://twitter.com/example"
     weight = 30
 
   [[params.social]]
-    icon = "linkedin"
+    name = "linkedin"
     url = "https://www.linkedin.com/in/example"
     weight = 20
 ```
@@ -171,6 +171,7 @@ And you have organize your posts like this:
 .
 └── content
     └── en
+    │   ├── _index.md
     |   └── posts
     |       └── post-1.md
     ├── fr
@@ -178,6 +179,7 @@ And you have organize your posts like this:
     |       ├── post-1.md
     |       └── post-2.md
     └── zh
+        ├── _index.md
         └── posts
             ├── post-1.md
             └── post-2.md
