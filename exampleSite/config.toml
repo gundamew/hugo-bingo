@@ -36,7 +36,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
   [params.avatar]
     use = "local"
 
-  [[params.gravatar]]
+  [params.gravatar]
     email = "hugo@example.com"
     size = 240
 

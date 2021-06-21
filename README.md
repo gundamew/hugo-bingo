@@ -35,7 +35,7 @@ googleAnalytics = "UA-123-45"
   [params.avatar]
     use = "local"  # "local" or "gravatar"
 
-  [[params.gravatar]]
+  [params.gravatar]
     email = "hugo@example.com"
     size = 240
 
