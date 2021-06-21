@@ -1,9 +1,17 @@
 {{ define "main" }}
 <main id="home">
     <div>
+        {{ if (isset .Site.Params "avatar") }}
         <div class="avatar">
-            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar.email }}?s=240&d=mp" alt="gravatar">
+            {{ if eq .Site.Params.avatar.use "gravatar" }}
+            <img src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar.email }}?s={{ .Site.Params.gravatar.size }}&d=mp" alt="gravatar">
+            {{ else if eq .Site.Params.avatar.use "local" }}
+            <img src="{{ .Site.Params.avatar.local.path }}" alt="local avatar">
+            {{ else }}
+            <img src="" alt="avatar not found">
+            {{ end }}
         </div>
+        {{ end }}
         <div id="content">
             {{ .Content }}
             <div class="social-media">

@@ -27,13 +27,20 @@ This theme includes Hugo [internal template](https://gohugo.io/templates/interna
 googleAnalytics = "UA-123-45"
 ```
 
-### Use Gravatar
+### Use Gravatar or local avatar image
 
 ```toml
 [params]
 
-  [params.gravatar]
+  [params.avatar]
+    use = "local"  # "local" or "gravatar"
+
+  [[params.gravatar]]
     email = "hugo@example.com"
+    size = 240
+
+  [params.avatar.local]
+    path = "example.png"  # please put the image in the static directory
 ```
 
 ### Custom navbar
@@ -89,6 +96,7 @@ Available social icons:
 * `linkedin`
 * `medium`
 * `plurk`
+* `rss`
 * `stackexchange`
 * `stackoverflow`
 * `twitter`
